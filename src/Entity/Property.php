@@ -13,9 +13,9 @@ class Property
 {
 
     const HEAT = [
-        0 => 'electric',
-        1 => 'gaz',
-        2 => 'radiator'
+        0 => 'Electrique',
+        1 => 'Gaz',
+        2 => 'Radiateur'
     ];
 
     /**
@@ -208,6 +208,11 @@ class Property
         $this->heat = $heat;
 
         return $this;
+    }
+
+    public function getHeatType():string
+    {
+        return self::HEAT[$this->heat];
     }
 
     public function getCity(): ?string
