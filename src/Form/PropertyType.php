@@ -22,8 +22,9 @@ class PropertyType extends AbstractType
             ->add('rooms')
             ->add('bedrooms')
             ->add('floor')
-            ->add('imageFile', FileType::class, [
-                'required'=> false
+            ->add('picturesFiles', FileType::class, [
+                'required'=> false,
+                'multiple'=> true
             ])
             ->add('price')
             ->add('heat', ChoiceType::class, [
