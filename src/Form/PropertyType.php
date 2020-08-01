@@ -22,6 +22,9 @@ class PropertyType extends AbstractType
             ->add('rooms')
             ->add('bedrooms')
             ->add('floor')
+            ->add('imageFile', FileType::class, [
+                'required'=> false
+            ])
             ->add('price')
             ->add('heat', ChoiceType::class, [
                 'choices'=> $this->getChoices()
@@ -31,9 +34,6 @@ class PropertyType extends AbstractType
                 'required'=> false,
                 'choice_label'=> 'name',
                 'multiple'=> true
-            ])
-            ->add('imageFile', FileType::class, [
-                'required'=> false
             ])
             ->add('city')
             ->add('address')
