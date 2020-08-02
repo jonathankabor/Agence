@@ -9,5 +9,16 @@
            <p> L'Agence qui est à votre service et qui comprend vos besoins</p>
        </div>
     </div>
+        <div class="container">
+            <h2>Les derniers biens</h2>
+            <div class="row flex">
+                {% for property in properties %}
+                <div class="col-3">
+                    {% include 'property/_property.html.twig' %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 
 {% endblock %}
