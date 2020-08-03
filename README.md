@@ -44,3 +44,4 @@ Scénario
 - Visite du site 
 - Visite et administration du back-office en admin
 - Envoyer un mail depuis son profil dans l'onglet Contact
+- Mise en place d'un système de géolocalisation avec OpenStreetMap
